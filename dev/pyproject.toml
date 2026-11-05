@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
@@ -26,7 +30,8 @@ dependencies = [
   "black==25.12.0",
   "mypy==1.19.1",
   "pylint==4.0.4",
-  "coverage"
+  "coverage",
+  "reuse==6.3.0"
 ]
 
 [tool.setuptools.packages.find]
