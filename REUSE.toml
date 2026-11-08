@@ -27,31 +27,28 @@ SPDX-FileCopyrightText = "2026 express-schema AUTHORS"
 SPDX-License-Identifier = "MIT"
 
 # The IFC schemas are third-party files by buildingSMART International, kept
-# verbatim as test data (see dev/test_data/schemas/README.md). They keep their
-# original copyright and terms and are not covered by the MIT license of this
-# project. "override" makes REUSE ignore the free-form "Copyright by:" prolog
-# comments inside the files, which it can not parse into a holder.
+# verbatim as test data (see dev/test_data/schemas/README.md). They are the
+# official releases from https://standards.buildingsmart.org/IFC/RELEASE/,
+# which buildingSMART publishes under CC BY-ND 4.0 (see the LICENSE.md of
+# https://github.com/buildingSMART/IFC4.3.x-development). The notices inside
+# the older files predate that license. The schemas are not covered by the MIT
+# license of this project. "override" makes REUSE ignore the free-form
+# "Copyright by:" prolog comments inside the files, which it can not parse
+# into a holder.
+[[annotations]]
+path = "dev/test_data/schemas/IFC2x3_Final.exp"
+precedence = "override"
+SPDX-FileCopyrightText = "1996-2005 International Alliance for Interoperability (now buildingSMART International Limited)"
+SPDX-License-Identifier = "CC-BY-ND-4.0"
 
-# IFC 4.3 ADD2 (ISO 16739-1:2024) is published by buildingSMART under
-# CC BY-ND 4.0.
+[[annotations]]
+path = "dev/test_data/schemas/IFC4.exp"
+precedence = "override"
+SPDX-FileCopyrightText = "1996-2013 buildingSMART International Limited"
+SPDX-License-Identifier = "CC-BY-ND-4.0"
+
 [[annotations]]
 path = "dev/test_data/schemas/IFC4X3_ADD2.exp"
 precedence = "override"
 SPDX-FileCopyrightText = "1996-2024 buildingSMART International Limited"
 SPDX-License-Identifier = "CC-BY-ND-4.0"
-
-# IFC4 (2013) carries its own terms of use in its prolog comment, reproduced
-# in LICENSES/LicenseRef-buildingSMART-IFC4.txt.
-[[annotations]]
-path = "dev/test_data/schemas/IFC4.exp"
-precedence = "override"
-SPDX-FileCopyrightText = "1996-2013 buildingSMART International Limited"
-SPDX-License-Identifier = "LicenseRef-buildingSMART-IFC4"
-
-# IFC2x3 (2005) carries an "all rights reserved" notice in its prolog comment,
-# reproduced in LICENSES/LicenseRef-IAI-IFC2x3.txt.
-[[annotations]]
-path = "dev/test_data/schemas/IFC2x3_Final.exp"
-precedence = "override"
-SPDX-FileCopyrightText = "1996-2005 International Alliance for Interoperability (now buildingSMART International Limited)"
-SPDX-License-Identifier = "LicenseRef-IAI-IFC2x3"
