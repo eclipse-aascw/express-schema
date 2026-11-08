@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Provide features shared accross the tests."""
 
 import os

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Parse EXPRESS Schema (ISO 10303-11) and print the Abstract Syntax Tree."""
 
 import argparse

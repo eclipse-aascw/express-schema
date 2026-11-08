@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Tokenize and parse than Express schema."""
 
 # pylint: disable=missing-docstring

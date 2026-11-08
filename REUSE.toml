@@ -1,0 +1,54 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# Prose and metadata where a header would end up in the rendered output
+# (e.g., README shown on PyPI and GitHub) or which can not carry a comment.
+[[annotations]]
+path = [
+    "AUTHORS",
+    "README.rst",
+    "CONTRIBUTING.rst",
+    "express_schema/py.typed",
+    "dev/test_data/schemas/README.md",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 express-schema AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The test cases and the recorded parser outputs are compared byte-by-byte,
+# so they can not carry a header.
+[[annotations]]
+path = "dev/test_data/test_parse/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 express-schema AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The IFC schemas are third-party files by buildingSMART International, kept
+# verbatim as test data (see dev/test_data/schemas/README.md). They are the
+# official releases from https://standards.buildingsmart.org/IFC/RELEASE/,
+# which buildingSMART publishes under CC BY-ND 4.0 (see the LICENSE.md of
+# https://github.com/buildingSMART/IFC4.3.x-development). The notices inside
+# the older files predate that license. The schemas are not covered by the MIT
+# license of this project. "override" makes REUSE ignore the free-form
+# "Copyright by:" prolog comments inside the files, which it can not parse
+# into a holder.
+[[annotations]]
+path = "dev/test_data/schemas/IFC2x3_Final.exp"
+precedence = "override"
+SPDX-FileCopyrightText = "1996-2005 International Alliance for Interoperability (now buildingSMART International Limited)"
+SPDX-License-Identifier = "CC-BY-ND-4.0"
+
+[[annotations]]
+path = "dev/test_data/schemas/IFC4.exp"
+precedence = "override"
+SPDX-FileCopyrightText = "1996-2013 buildingSMART International Limited"
+SPDX-License-Identifier = "CC-BY-ND-4.0"
+
+[[annotations]]
+path = "dev/test_data/schemas/IFC4X3_ADD2.exp"
+precedence = "override"
+SPDX-FileCopyrightText = "1996-2024 buildingSMART International Limited"
+SPDX-License-Identifier = "CC-BY-ND-4.0"

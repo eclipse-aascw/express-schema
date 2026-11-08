@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 # pylint: disable=missing-docstring
 
 import unittest
@@ -193,6 +197,11 @@ ENTITY
         # This test case failed on the first implementation of the lexer and we only
         # discovered it when we tried to parse the actual schema.
 
+        # NOTE (aaronzi, 2026-11-05):
+        # The prolog comment below is quoted from the IFC4.1 schema as test input.
+        # We exclude it from the REUSE scan so that its copyright notice is not
+        # mistaken for the copyright of this file.
+        # REUSE-IgnoreStart
         tokens, ok = lex.lex(
             """\
 (*
@@ -223,6 +232,7 @@ Thursday, March 2, 2017
 SCHEMA IFC4X1;
 """
         )
+        # REUSE-IgnoreEnd
         assert ok
         self.assert_token_kinds(
             tokens,

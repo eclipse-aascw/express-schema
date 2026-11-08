@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 express-schema AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Run express-schema as Python module."""
 
 import express_schema.main
